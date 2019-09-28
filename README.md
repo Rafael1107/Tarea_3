@@ -20,3 +20,4 @@ if(i%%2==0) {print("Par")} else {print("impar")}
 }
 Asi se evidencia los numeros par e inpar de los datos seleccionados
 Ejercicio9:
+hola
