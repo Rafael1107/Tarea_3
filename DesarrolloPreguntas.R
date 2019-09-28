@@ -32,12 +32,13 @@ print(i)
 if(i%%2==0) {print("Par")} else {print("impar")}
 }
 #Ejercicio9
-total_votos<-votos_no+votos_si
+
 pleb<-100
-votos_si<-5
-votos_no<-35
+votos_si<-50
+votos_no<-10
 quorum<-(pleb*0.5)+1
-# intento 1
+total_votos<-votos_no+votos_si
+# intento 1 no funciona
 if((total_votos<quorum)&&(votos_si>=(pleb*0.3))){
   print("Gano el SI")
   } else if((total_votos<quorum)&&(votos_no>=(pleb*0.3))){
@@ -45,10 +46,15 @@ if((total_votos<quorum)&&(votos_si>=(pleb*0.3))){
     } else if(total_votos>quorum) {
       print(if(votos_si>votos_no){"Gano el SI"} else if(print(votos_si<votos_no)){"Gano el NO"
       } else{print("Gana el SI")})}
-#intento2
-if((total_votos<quorum)&&(votos_si>=0.3*pleb||votos_no>=0.3*pleb)){
-  print(if(votos_si>votos_no){print("Gana el SI")} else{print("Gana el NO")})} else if(
+#intento2 ESTE SI FUNCIONA, literalmente es mas ordenado y mas facil de visualizar
+#Gracias a Boris y Ariam me di cuenta :)
+if((total_votos<quorum)&(votos_si>=0.3*pleb)){print("Gana el SI")
+  } else if((total_votos<quorum)&(votos_no>=0.3*pleb)){print("Gano el NO")
+  } else if((total_votos<quorum)&((votos_no<0.3*pleb)&(votos_si<0.3*pleb))){print("Gano el NO")
+  } else if(total_votos>quorum&&votos_no<votos_si){print("Gano el SI")
+    } else if(total_votos>quorum&&votos_no>votos_si) {
+      Print("Gano el NO")} else if (total_votos>quorum&&votos_no==votos_si){print("Gano el SI")
+      } else {"Algo Paso"}
     
-    
-  }
-    
+        
+        

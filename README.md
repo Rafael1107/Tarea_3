@@ -17,4 +17,13 @@ Ejercicio 8:for (i in listaDeNumeros){
 if(i%%2==0) {print("Par")} else {print("impar")}
 }
 Asi se evidencia los numeros par e inpar de los datos seleccionados
-Ejercicio9: 
+Ejercicio9: if((total_votos<quorum)&(votos_si>=0.3*pleb)){print("Gana el SI")
+  } else if((total_votos<quorum)&(votos_no>=0.3*pleb)){print("Gano el NO")
+  } else if((total_votos<quorum)&((votos_no<0.3*pleb)&(votos_si<0.3*pleb))){print("Gano el NO")
+  } else if(total_votos>quorum&&votos_no<votos_si){print("Gano el SI")
+    } else if(total_votos>quorum&&votos_no>votos_si) {
+      Print("Gano el NO")} else if (total_votos>quorum&&votos_no==votos_si){print("Gano el SI")
+      } else {"Algo Paso"}
+PD: el ultimo ELSE es para fijarse si existe alguna situacion que no funcionaba durante las pruebas.
+Ejercicio 10:
+
