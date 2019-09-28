@@ -46,5 +46,9 @@ if((total_votos<quorum)&&(votos_si>=(pleb*0.3))){
       print(if(votos_si>votos_no){"Gano el SI"} else if(print(votos_si<votos_no)){"Gano el NO"
       } else{print("Gana el SI")})}
 #intento2
-
+if((total_votos<quorum)&&(votos_si>=0.3*pleb||votos_no>=0.3*pleb)){
+  print(if(votos_si>votos_no){print("Gana el SI")} else{print("Gana el NO")})} else if(
+    
+    
+  }
     
