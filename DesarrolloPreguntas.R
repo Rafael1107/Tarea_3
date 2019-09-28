@@ -37,7 +37,7 @@ pleb<-100
 votos_si<-5
 votos_no<-35
 quorum<-(pleb*0.5)+1
-
+# intento 1
 if((total_votos<quorum)&&(votos_si>=(pleb*0.3))){
   print("Gano el SI")
   } else if((total_votos<quorum)&&(votos_no>=(pleb*0.3))){
@@ -45,5 +45,6 @@ if((total_votos<quorum)&&(votos_si>=(pleb*0.3))){
     } else if(total_votos>quorum) {
       print(if(votos_si>votos_no){"Gano el SI"} else if(print(votos_si<votos_no)){"Gano el NO"
       } else{print("Gana el SI")})}
+#intento2
 
     
