@@ -1,7 +1,5 @@
 # Tarea_3
-URL de Git
-URL de Git
-Rafael Andres Godoy
+##Rafael Andres Godoy##
 Ejercicio 1: al colocar un numero mayor a la cantidad de datos te entrega el resultad "NULL".
 al colocar un 0 entrega ls() que significa vacio
 por otro lado al colocar un numero negativo le quita el primer digito a la lista y lo muestra sin el.
